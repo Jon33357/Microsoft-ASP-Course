@@ -11,9 +11,10 @@ using System;
 namespace MyFirstApp.Migrations
 {
     [DbContext(typeof(MyFirstAppContext))]
-    partial class MyFirstAppContextModelSnapshot : ModelSnapshot
+    [Migration("20170925104740_Rating")]
+    partial class Rating
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
